@@ -5,7 +5,7 @@ import AuthCallbackPage from "./pages/AuthCallbackPage";
 import UserProfilePage from "./pages/UserProfilePage";
 import ProtectedRoute from "./auth/ProtectedRoute";
 import ManageRestaurantPage from "./pages/ManageRestaurantPage";
-import ManageRestaurantPage from "./pages/ManageRestaurantPage";
+
 
 const AppRoutes = () => {
   return (
