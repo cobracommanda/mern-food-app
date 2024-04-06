@@ -19,30 +19,29 @@ const ImageSection = () => {
           Add an image that will be displayed on your restaurant listing in the
           search results. Adding a new image will overwrite the existing one.
         </FormDescription>
-
-        <div className="flex flex-col gap-8 w-[50%]">
-          <FormField
-            control={control}
-            name="imageFile"
-            render={({ field }) => (
-              <FormItem>
-                <FormControl>
-                  <Input
-                    className="bg-white"
-                    type="file"
-                    accept=".jpg, .jpeg, .png"
-                    onChange={(event) =>
-                      field.onChange(
-                        event.target.files ? event.target.files[0] : null
-                      )
-                    }
-                  />
-                </FormControl>
-                <FormMessage />
-              </FormItem>
-            )}
-          />
-        </div>
+      </div>
+      <div className="flex flex-col gap-8 w-[50%]">
+        <FormField
+          control={control}
+          name="imageFile"
+          render={({ field }) => (
+            <FormItem>
+              <FormControl>
+                <Input
+                  className="bg-white"
+                  type="file"
+                  accept=".jpg, .jpeg, .png"
+                  onChange={(event) =>
+                    field.onChange(
+                      event.target.files ? event.target.files[0] : null
+                    )
+                  }
+                />
+              </FormControl>
+              <FormMessage />
+            </FormItem>
+          )}
+        />
       </div>
     </div>
   );
